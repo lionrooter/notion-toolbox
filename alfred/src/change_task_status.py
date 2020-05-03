@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3
+#!/Users/bryanfisher/.pyenv/versions/3.8.2/bin/python3
 
 import sys
 import argparse

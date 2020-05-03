@@ -44,9 +44,8 @@ class NotionApi():
         found_week = None
         current_date = datetime.now()
 
-        # Sunday Starts the week
-        week_number = str(current_date.isocalendar()[
-                         1] + (current_date.isoweekday() == 7))
+        # Monday Starts the week
+        week_number = str(current_date.isocalendar()[1])
 
         for week_page in self.current_year().children:
             if week_page.title.startswith("Week " + week_number):
